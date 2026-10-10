@@ -1,0 +1,19 @@
+# Environment dan cache
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Konfigurasi lokal dan secrets
+.env
+.env.*
+.streamlit/secrets.toml
+.vscode/
+
+# Data sumber dan hasil eksperimen lokal
+data/raw/
+outputs_motor_pricing/
+
+# File sistem
+.DS_Store
+Thumbs.db

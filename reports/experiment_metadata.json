@@ -1,0 +1,46 @@
+{
+  "seed": 42,
+  "max_policies": null,
+  "tweedie_evaluation_power": 1.5,
+  "winner": "FrequencySeverity",
+  "frequency": "HGB_Poisson_leaf31",
+  "severity": "HGB_Gamma_leaf7",
+  "direct": "Tweedie_a1.0",
+  "versions": {
+    "python": "3.12.10",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "sklearn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "test_metrics": [
+    {
+      "Approach": "Baseline",
+      "TweedieDeviance": 86.27388087556771,
+      "MAE": 319.1551084914925,
+      "RMSE": 9784.825325262693,
+      "ActualLoss": 11669553.06,
+      "PredictedLoss": 12063622.593798729,
+      "Actual_over_Predicted": 0.9673340631526969
+    },
+    {
+      "Approach": "FrequencySeverity",
+      "TweedieDeviance": 79.93166583303648,
+      "MAE": 288.837382074125,
+      "RMSE": 9785.848001171371,
+      "ActualLoss": 11669553.06,
+      "PredictedLoss": 10306926.083333593,
+      "Actual_over_Predicted": 1.1322049819363496
+    },
+    {
+      "Approach": "DirectTweedie",
+      "TweedieDeviance": 81.56798968721073,
+      "MAE": 309.2338258265845,
+      "RMSE": 9785.354992245613,
+      "ActualLoss": 11669553.06,
+      "PredictedLoss": 11766024.350303952,
+      "Actual_over_Predicted": 0.9918008592000357
+    }
+  ],
+  "scope": "French historical motor TPL; reconciled cohort; no commercial loading in model"
+}

@@ -6,3 +6,5 @@ scikit-learn==1.8.0
 scipy==1.18.1
 joblib==1.5.3
 threadpoolctl==3.7.0
+requests
+fastapi[standard]
